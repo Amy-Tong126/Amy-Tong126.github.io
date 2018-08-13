@@ -64,32 +64,32 @@
             <li >
                 <a href="/">
                     <i class="iconfont icon-shouye1"></i>
-                    <span>HOME</span>
+                    <span>主页</span>
                 </a>
             </li>
             <li >
                 <a href="/tags">
                     <i class="iconfont icon-biaoqian1"></i>
-                    <span>TAGS</span>
+                    <span>标签</span>
                 </a>
             </li>
             <li >
                 <a href="/archives">
                     <i class="iconfont icon-guidang2"></i>
-                    <span>ARCHIVES</span>
+                    <span>存档</span>
                 </a>
             </li>
             <li >
                 <a href="/about/">
                     <i class="iconfont icon-guanyu2"></i>
-                    <span>ABOUT</span>
+                    <span>关于</span>
                 </a>
             </li>
             
             <li>
                 <a id="search">
                     <i class="iconfont icon-sousuo1"></i>
-                    <span>SEARCH</span>
+                    <span>搜索</span>
                 </a>
             </li>
             
@@ -108,7 +108,7 @@
         <div class="search-input">
             <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
             <input id="search-input"/>
-            <span id="begin-search">search</span>
+            <span id="begin-search">搜索</span>
         </div>
         <div class="search-result-container" id="search-result-container">
 
@@ -131,10 +131,10 @@
     </div>
 
     <div class="post-meta">
-        <span class="attr">Post：<span>2018-08-10 23:04:40</span></span>
+        <span class="attr">发布于：<span>2018-08-10 23:04:40</span></span>
         
         </span>
-        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+        <span class="attr">访问：<span id="busuanzi_value_page_pv"></span>
 </span>
 </span>
     </div>
@@ -143,7 +143,7 @@
         
             <div class="donate-container">
     <div class="donate-button">
-        <button id="donate-button">赏</button>
+        <button id="donate-button">赞赏</button>
     </div>
     <div class="donate-img-container hide" id="donate-img-container">
         <img id="donate-img" src="" data-src="/img/donate.jpg">
@@ -155,6 +155,7 @@
         </div>
     </div>
 </div>
+        <div id="container"></div>
     </div>
 </div>
 
@@ -193,18 +194,25 @@
 <script src="/js/index.js"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+<!--评论-->
+
 <script src="/js/gitment.js"></script>
+
+
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
-        id: 'layout',
-        owner: 'aircloud',
-        repo: 'hexo-aircloud-blog',
+        id: location.href, // 可选。默认为 location.href
+        owner: 'Amy-Tong126',
+        repo: 'git@github.com:Amy-Tong126/Commits.git',
         oauth: {
-            client_id: 'Amy-Tong126',
-            client_secret: 'github0126',
+            client_id: 'bd61aa77856ba4ceaee5',
+            client_secret: 'b91c89fdb07fb2c9c62201a24c43de0d780400f3',
         },
     })
-    gitment.render('comment-container')
+    gitment.render('container')
 </script>
+
 
 </html>
